@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Добавление отзыва{% endblock %}
+{% block content %}
+<main>
+    <div class="container">
+        <div class="px-4 py-5 my-5 text-center">
+            <h1 class="display-5 fw-bold">Добавление отзыва</h1>
+
+            <form action="{{ url_for('add_to_guestbook') }}" method="post">
+
+                <div class="mt-5">
+                    <label for="name" class="form-label">Имя</label>
+                    <input class="form-control" name="name" id="name" placeholder="Данил">
+                </div>
+                <div class="mb-3">
+                    <label for="text" class="form-label">Отзыв</label>
+                    <textarea class="form-control" name="text" id="text" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-warning gap-3">Добавить
+                    комменатрий</button>
+            </form>
+        </div>
+    </div>
+</main>
+{% endblock %}
