@@ -1,3 +1,6 @@
+
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
 from datetime import datetime
 
 current_data = datetime.today().strftime('%Y-%m-%d')
